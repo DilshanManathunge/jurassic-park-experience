@@ -13,27 +13,13 @@
       Your Adventure awaits
     </button>
   </div>
-  <div class="page-view grid grid-cols-2">
-    <div class="flex flex-col justify-center items-center">
-      <h1 class="text-8xl text-lime-950 font-black text-center">
-        <span style="font-size: 8rem">04</span><br />
-        <span style="font-family: : 'Roboto', sans-serif;"
-          >UNIQUE<br />
-          TASTES</span
-        >
-      </h1>
-      <p>
-        We have curated 4 unique adventures to suit the unique taste of our
-        clientel
-      </p>
-    </div>
-    <div class="flex flex-col justify-center items-center">image 1</div>
-  </div>
+
+  <TourSelection />
   <div class="page-view">Section 3</div>
 </template>
 <script setup>
 import { onMounted } from "vue"
-
+import TourSelection from "../components/tour/TourSelectionView.vue"
 onMounted(() => {
   console.log("home is mounted")
 })
